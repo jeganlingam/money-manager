@@ -407,7 +407,8 @@ VALUES(@TransactionDate, @Description, @OriginalDescription, @Category,
 			foreach (var transaction in newTransactions)
 			{
 				bool isExisting = existingTransactions.Any(x => x.AccountName.Equals(transaction.AccountName, StringComparison.OrdinalIgnoreCase)
-						&& x.Amount.Equals(transaction.Amount)
+						&& x.Amount == transaction.Amount
+						&& x.TransactionDate == transaction.TransactionDate
 						&& x.Description.Equals(transaction.Description, StringComparison.OrdinalIgnoreCase)
 						&& x.OriginalDescription.Equals(transaction.OriginalDescription, StringComparison.OrdinalIgnoreCase));
 
