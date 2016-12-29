@@ -51,7 +51,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatabaseManagement\ConnectionStringProvider.cs" />
-    <Compile Include="Data\CsvReader.cs" />
+    <Compile Include="Data\Account.cs" />
+    <Compile Include="Data\Asset.cs" />
+    <Compile Include="Data\CategoriesProvider.cs" />
+    <Compile Include="Data\CsvManager.cs" />
     <Compile Include="Data\StaticConfig.cs" />
     <Compile Include="Data\Transaction.cs" />
     <Compile Include="Form1.cs">

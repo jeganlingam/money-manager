@@ -20,6 +20,14 @@ namespace MoneyManager
 		public DateTime ModifiedOn { get; set; }
 		public string BatchId { get; set; }
 
+		public string CustomCategory { get; set; }
+
+
+		public Transaction()
+		{
+
+		}
+
 		public Transaction(DateTime transactionDate, string description, string originalDescription,
 			Decimal amount, string transactionType, string category, string accountName,
 			string batchId)
